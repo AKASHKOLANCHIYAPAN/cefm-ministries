@@ -217,4 +217,30 @@ function toggleStatePanel(header) {
     panel.classList.toggle('open');
 }
 
-document.addEventListener('DOMContentLoaded', renderChurches);
+document.addEventListener('DOMContentLoaded', () => {
+    renderChurches();
+
+    // Auto-open state from ?state= query parameter (from leadership page)
+    const params = new URLSearchParams(window.location.search);
+    const stateParam = params.get('state');
+    if (stateParam) {
+        // Map display names to CHURCHES_DATA keys
+        const stateMap = {
+            'Tamil Nadu': 'TAMIL NADU',
+            'Andhra Pradesh': 'ANDHRA PRADESH',
+            'Telangana': 'TELANGANA',
+            'Chhattisgarh': 'CHHATTISGARH',
+            'Odisha': 'ODISHA',
+            'Maharashtra': 'MAHARASHTRA'
+        };
+        const dataKey = stateMap[stateParam] || stateParam.toUpperCase();
+        const panelId = 'state-' + dataKey.replace(/\s/g, '-');
+        const panel = document.getElementById(panelId);
+        if (panel) {
+            panel.classList.add('open');
+            setTimeout(() => {
+                panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300);
+        }
+    }
+});
