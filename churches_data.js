@@ -675,7 +675,7 @@ const CHURCHES_DATA = {
         "name": "B. BASKAR",
         "churchName": "CEFM Church",
         "address": "KILINSEL STREET,NATARAJAPURAM,CHIDAMBARAM,DIST-CUDALORE.",
-        "district": "Cudalore"
+        "district": "Cuddalore"
       },
       {
         "no": 5,
@@ -738,7 +738,7 @@ const CHURCHES_DATA = {
         "name": "R. DANIEL",
         "churchName": "CEFM church",
         "address": "PUTHU THERU,KADDUMANNARKOVIL,VEERANANTHAPURAM, KADALLOR-DIST",
-        "district": "Kadallor"
+        "district": "Cuddalore"
       },
       {
         "no": 14,
@@ -766,35 +766,35 @@ const CHURCHES_DATA = {
         "name": "Rev.S. HUBERT SUBIN RAJ",
         "churchName": "CEFM Witness Tabernacle Church",
         "address": "KARTUMANNARKOVIL ,VEERANATHAM,CUDALORE-DIST",
-        "district": "Cudalore"
+        "district": "Cuddalore"
       },
       {
         "no": 18,
         "name": "K.K. DEVASELVAM",
         "churchName": "CEFM Parisuthar Devalayam",
         "address": "1/76E,MANTHAKARI,KUMARAMANGALAM,CHIDAMBARAM,CUDALORE-DIST.",
-        "district": "Cudalore"
+        "district": "Cuddalore"
       },
       {
         "no": 19,
         "name": "T. SATHRAK",
         "churchName": "CEFM church",
         "address": "ATHINARAYANAPURAM,MELATHERU-PO,ALLAPAKKAM VALI, KURINPADI-TK KADALORE-DIST",
-        "district": "Kurinpaditk kadalore-"
+        "district": "Cuddalore"
       },
       {
         "no": 20,
         "name": "STEPHAN P NAGARAJ",
         "churchName": "CEFM church",
         "address": "303,SC STREET, THALIGAIVIDUTHY,THANJUR-DIST",
-        "district": "Thanjur"
+        "district": "Tanjore"
       },
       {
         "no": 21,
         "name": "M. ARULDASS",
         "churchName": "CEFM Vaanathin Vaasal Jebaveedu",
         "address": "BETHEL ST,SIKKALNAYAKKAN PATTAI,THANJAVUR-DIST",
-        "district": "Thanjavur"
+        "district": "Tanjore"
       },
       {
         "no": 22,
@@ -808,7 +808,7 @@ const CHURCHES_DATA = {
         "name": "A. SIMEON JEBARAJ",
         "churchName": "CEFM Worship Tabernacle",
         "address": "5/5, RAILWAY STATION, POONGULATHUVILLAI,KANYAKUMAI-DIST",
-        "district": "Kanyakumai"
+        "district": "Kanyakumari"
       },
       {
         "no": 26,
@@ -843,14 +843,14 @@ const CHURCHES_DATA = {
         "name": "R. KALAISELVI",
         "churchName": "CEFM church",
         "address": "3/6,PALLIKOODATHERU,ECHAMPOONDI,KATTUMANNARKOVIL,CADALLORE-DIST",
-        "district": "Cadallore"
+        "district": "Cuddalore"
       },
       {
         "no": 31,
         "name": "P. GIDEON MUNIYANDI",
         "churchName": "CEFM church",
         "address": "1/14,MATHA KAVELI ST,AAGARAM,ARANI,VENAMAGAIM,T.V.MALI DIST.",
-        "district": "Mali"
+        "district": "T.V. Mali"
       }
     ]
   }
