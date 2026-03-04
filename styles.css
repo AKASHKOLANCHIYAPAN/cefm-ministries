@@ -298,8 +298,8 @@ p {
   font-size: 0.78rem;
   color: var(--white);
   line-height: 1.35;
-  min-width: 200px;
-  max-width: 280px;
+  min-width: 170px;
+  max-width: 240px;
   letter-spacing: 0.5px;
 }
 
@@ -314,20 +314,21 @@ p {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
 }
 
 .nav-links a {
-  padding: 8px 16px;
+  padding: 6px 9px;
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   transition: all 0.3s var(--ease-smooth);
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -349,12 +350,12 @@ p {
 }
 
 .nav-donate {
-  padding: 10px 24px !important;
+  padding: 8px 18px !important;
   background: linear-gradient(135deg, var(--gold), var(--gold-dark)) !important;
   color: var(--white) !important;
   border-radius: 50px !important;
   font-weight: 600 !important;
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 .nav-donate:hover {

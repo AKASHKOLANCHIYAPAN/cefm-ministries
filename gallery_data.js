@@ -295,6 +295,27 @@ const galleryData = [
                 pastor: "",
                 location: "westgodavari",
                 photos: ["WhatsApp Image 2023-08-18 at 11.16.16 AM (1).jpeg", "WhatsApp Image 2023-08-18 at 11.16.16 AM (2).jpeg", "WhatsApp Image 2023-08-18 at 11.16.16 AM.jpeg", "WhatsApp Image 2023-08-18 at 11.16.17 AM.jpeg"]
+            },
+            {
+                name: "Pr Aanjaneyalu \u2014 Rupaguntla Village, AP",
+                folder: "Pr Aanjaneyalu, Rupaguntla Village, AP",
+                pastor: "Pr Aanjaneyalu",
+                location: "Rupaguntla Village, AP",
+                photos: ["WhatsApp Image 2026-02-09 at 7.42.19 PM (2).jpeg", "WhatsApp Image 2026-02-09 at 7.43.40 PM.jpeg", "WhatsApp Image 2026-02-09 at 8.00.40 PM.jpeg", "WhatsApp Image 2026-02-09 at 8.00.45 PM (1).jpeg"]
+            },
+            {
+                name: "Pr Abraham \u2014 Balaji Nager AP",
+                folder: "Pr Abraham, Balaji Nager AP",
+                pastor: "Pr Abraham",
+                location: "Balaji Nager AP",
+                photos: ["WhatsApp Image 2026-01-31 at 10.31.59 PM.jpeg", "WhatsApp Image 2026-01-31 at 10.35.10 PM (1).jpeg", "WhatsApp Image 2026-01-31 at 10.35.14 PM (1).jpeg", "WhatsApp Image 2026-01-31 at 10.35.15 PM.jpeg"]
+            },
+            {
+                name: "Pr David \u2014 Bandirevu Vlg, AP",
+                folder: "Pr David, Bandirevu Vlg, AP",
+                pastor: "Pr David",
+                location: "Bandirevu Vlg, AP",
+                photos: ["WhatsApp Image 2026-02-11 at 4.15.12 PM.jpeg", "WhatsApp Image 2026-02-11 at 4.15.15 PM.jpeg", "WhatsApp Image 2026-02-11 at 4.15.17 PM.jpeg", "WhatsApp Image 2026-02-13 at 9.12.45 AM.jpeg"]
             }
         ]
     },
@@ -378,6 +399,27 @@ const galleryData = [
                 pastor: "",
                 location: "Velikal",
                 photos: ["WhatsApp Image 2022-09-14 at 11.12.09 AM (1).jpeg", "WhatsApp Image 2022-09-14 at 11.12.09 AM.jpeg"]
+            },
+            {
+                name: "Pr Venkataraju \u2014 Bhupathyraopet, Telangana",
+                folder: "Pr Venkataraju, Bhupathyraopet, Telangana",
+                pastor: "Pr Venkataraju",
+                location: "Bhupathyraopet, Telangana",
+                photos: ["WhatsApp Image 2026-02-13 at 8.59.05 AM.jpeg", "WhatsApp Image 2026-02-13 at 8.59.08 AM (1).jpeg", "WhatsApp Image 2026-02-13 at 8.59.09 AM (1).jpeg", "WhatsApp Image 2026-02-13 at 8.59.10 AM.jpeg", "WhatsApp Image 2026-02-13 at 9.04.54 AM (1).jpeg", "WhatsApp Image 2026-02-13 at 9.05.04 AM (1).jpeg"]
+            },
+            {
+                name: "Pr. Sodi Ezra \u2014 Sarapaka Vlg, Bhadradhri Dist. Telangana",
+                folder: "Pr. Sodi Ezra, Sarapaka Vlg, Bhadradhri Dist. Telangana",
+                pastor: "Pr. Sodi Ezra",
+                location: "Sarapaka Vlg, Bhadradhri Dist. Telangana",
+                photos: ["WhatsApp Image 2026-01-30 at 1.08.06 PM.jpeg", "WhatsApp Image 2026-01-30 at 1.11.16 PM.jpeg", "WhatsApp Image 2026-01-30 at 1.14.25 PM.jpeg", "WhatsApp Image 2026-01-30 at 11.12.21 AM.jpeg", "WhatsApp Image 2026-01-30 at 11.12.23 AM.jpeg", "WhatsApp Image 2026-01-30 at 11.15.13 AM.jpeg"]
+            },
+            {
+                name: "Pr.Madatham \u2014 Jelugumilli Village, Eluru Dist",
+                folder: "Pr.Madatham,Jelugumilli Village, Eluru Dist",
+                pastor: "Pr.Madatham",
+                location: "Jelugumilli Village, Eluru Dist",
+                photos: ["WhatsApp Image 2026-02-10 at 3.29.05 PM.jpeg", "WhatsApp Image 2026-02-10 at 3.29.06 PM (1).jpeg", "WhatsApp Image 2026-02-10 at 3.29.07 PM.jpeg", "WhatsApp Image 2026-02-10 at 3.30.26 PM.jpeg", "WhatsApp Image 2026-02-11 at 6.44.11 AM.jpeg"]
             }
         ]
     },
