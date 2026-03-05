@@ -902,7 +902,13 @@ function renderChurches() {
         if (aIsKk && !bIsKk) return -1;
         if (!aIsKk && bIsKk) return 1;
 
-        // Cuddalore second
+        // Tirunelveli second
+        const aIsTnv = aLower.includes('tirunelveli');
+        const bIsTnv = bLower.includes('tirunelveli');
+        if (aIsTnv && !bIsTnv) return -1;
+        if (!aIsTnv && bIsTnv) return 1;
+
+        // Cuddalore third
         const aIsCud = aLower.includes('cuddalore') || aLower.includes('cudalore') || aLower.includes('cadallore');
         const bIsCud = bLower.includes('cuddalore') || bLower.includes('cudalore') || bLower.includes('cadallore');
         if (aIsCud && !bIsCud) return -1;

@@ -17,7 +17,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="container">
             <a href="index.html" class="nav-logo">
-                <img src="new logo.png" alt="CEFM Logo" class="logo-img" />
+                <img src="logo new 1.png" alt="CEFM Logo" class="logo-img" />
                 <div class="logo-text">
                     <span class="logo-name">CHRISTIAN EVANGELICAL<br>FELLOWSHIP MISSION</span>
                 </div>
@@ -60,12 +60,24 @@
             <p style="color: rgba(255,255,255,0.5); font-size: 0.92rem; margin-bottom: 32px;">
                 Live from CEFM Worship Tabernacle, Kanyakumari
             </p>
-            <div class="video-wrapper" style="max-width: 900px;">
-                <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=Janani-t9q"
-                    title="CEFM Live Stream"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen loading="lazy"></iframe>
-                <a href="https://www.youtube.com/@Janani-t9q/live" target="_blank" rel="noopener" class="btn btn-gold"
+            <div id="livePlayerWrapper" style="max-width: 900px; margin: 0 auto;">
+                <!-- Thumbnail fallback (always visible initially) -->
+                <a href="https://www.youtube.com/@karshan9552/live" target="_blank" rel="noopener"
+                    id="liveThumbnailLink"
+                    style="display: block; position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 40px rgba(10,22,40,0.18); aspect-ratio: 16/9;">
+                    <img src="thumbnail live.jpeg" alt="CEFM Live Stream Thumbnail"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <div
+                        style="position: absolute; inset: 0; background: rgba(0,0,0,0.35); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+                        <div
+                            style="width: 72px; height: 72px; border-radius: 50%; background: rgba(244,67,54,0.9); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 2rem; color: #fff; margin-left: 4px;">▶</span>
+                        </div>
+                        <span style="color: #fff; font-size: 1rem; font-weight: 600; letter-spacing: 1px;">Watch Live on
+                            YouTube</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/@karshan9552/live" target="_blank" rel="noopener" class="btn btn-gold"
                     style="margin-top: 24px; display: inline-flex;">📺 Watch on YouTube →</a>
             </div>
         </div>

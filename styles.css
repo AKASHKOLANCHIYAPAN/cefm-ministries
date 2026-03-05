@@ -292,14 +292,21 @@ p {
   flex-direction: column;
 }
 
+.nav-logo .logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
 .nav-logo .logo-name {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   color: var(--white);
   line-height: 1.35;
   min-width: 170px;
-  max-width: 240px;
+  max-width: 260px;
   letter-spacing: 0.5px;
 }
 
