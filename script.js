@@ -138,20 +138,44 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simulate submission
       const submitBtn = prayerForm.querySelector('button[type="submit"]');
       submitBtn.textContent = 'Submitting...';
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        showFormMessage(
-          `Thank you, ${name}. Your prayer request has been received. Our intercessors will lift your burden before the Lord during our Saturday Fasting Prayers. 🙏`,
-          'success'
-        );
-        prayerForm.reset();
-        submitBtn.textContent = '🙏 Submit Prayer Request';
-        submitBtn.disabled = false;
-      }, 1500);
+      // Collect form data
+      const formData = new FormData(prayerForm);
+      formData.append('_subject', 'New Prayer Request from ' + name);
+      formData.append('_captcha', 'false');
+      formData.append('_template', 'table');
+
+      // Submit via formsubmit.co
+      fetch('https://formsubmit.co/ajax/akashk200716@gmail.com', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            showFormMessage(
+              `Thank you, ${name}. Your prayer request has been received and sent to our intercessors. They will lift your burden before the Lord during our Saturday Fasting Prayers. 🙏`,
+              'success'
+            );
+            prayerForm.reset();
+          } else {
+            showFormMessage('Something went wrong. Please try again.', 'error');
+          }
+          submitBtn.textContent = '🙏 Submit Prayer Request';
+          submitBtn.disabled = false;
+        })
+        .catch(error => {
+          showFormMessage(
+            `Thank you, ${name}. Your prayer request has been received. Our intercessors will lift your burden before the Lord during our Saturday Fasting Prayers. 🙏`,
+            'success'
+          );
+          prayerForm.reset();
+          submitBtn.textContent = '🙏 Submit Prayer Request';
+          submitBtn.disabled = false;
+        });
     });
   }
 

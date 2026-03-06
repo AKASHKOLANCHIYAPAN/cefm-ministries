@@ -405,14 +405,14 @@ const galleryData = [
                 folder: "Pr Venkataraju, Bhupathyraopet, Telangana",
                 pastor: "Pr Venkataraju",
                 location: "Bhupathyraopet, Telangana",
-                photos: ["WhatsApp Image 2026-02-13 at 8.59.05 AM.jpeg", "WhatsApp Image 2026-02-13 at 8.59.08 AM (1).jpeg", "WhatsApp Image 2026-02-13 at 8.59.09 AM (1).jpeg", "WhatsApp Image 2026-02-13 at 8.59.10 AM.jpeg", "WhatsApp Image 2026-02-13 at 9.04.54 AM (1).jpeg", "WhatsApp Image 2026-02-13 at 9.05.04 AM (1).jpeg"]
+                photos: ["WhatsApp Image 2026-02-13 at 8.59.03 AM.jpeg", "WhatsApp Image 2026-02-13 at 8.59.07 AM.jpeg", "WhatsApp Image 2026-02-13 at 8.59.08 AM.jpeg", "WhatsApp Image 2026-02-13 at 8.59.09 AM (1).jpeg", "WhatsApp Image 2026-02-13 at 9.05.04 AM (1).jpeg", "WhatsApp Image 2026-02-13 at 9.05.04 AM.jpeg"]
             },
             {
                 name: "Pr. Sodi Ezra \u2014 Sarapaka Vlg, Bhadradhri Dist. Telangana",
                 folder: "Pr. Sodi Ezra, Sarapaka Vlg, Bhadradhri Dist. Telangana",
                 pastor: "Pr. Sodi Ezra",
                 location: "Sarapaka Vlg, Bhadradhri Dist. Telangana",
-                photos: ["WhatsApp Image 2026-01-30 at 1.08.06 PM.jpeg", "WhatsApp Image 2026-01-30 at 1.11.16 PM.jpeg", "WhatsApp Image 2026-01-30 at 1.14.25 PM.jpeg", "WhatsApp Image 2026-01-30 at 11.12.21 AM.jpeg", "WhatsApp Image 2026-01-30 at 11.12.23 AM.jpeg", "WhatsApp Image 2026-01-30 at 11.15.13 AM.jpeg"]
+                photos: ["WhatsApp Image 2026-01-30 at 1.08.06 PM.jpeg", "WhatsApp Image 2026-01-30 at 1.11.16 PM.jpeg", "WhatsApp Image 2026-01-30 at 11.05.35 AM.jpeg", "WhatsApp Image 2026-01-30 at 11.12.23 AM.jpeg", "WhatsApp Image 2026-01-30 at 11.15.13 AM.jpeg"]
             },
             {
                 name: "Pr.Madatham \u2014 Jelugumilli Village, Eluru Dist",
