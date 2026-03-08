@@ -59,7 +59,7 @@ html {
   font-size: 16px;
   overflow-x: hidden;
   max-width: 100vw;
-  height: 100%;
+  background-color: var(--midnight);
 }
 
 body {
@@ -2239,13 +2239,13 @@ p {
   .nav-logo .logo-name {
     min-width: unset;
     max-width: 200px;
-    font-size: 0.95rem;
-    white-space: normal;
+    font-size: 0.8rem;
+    white-space: nowrap;
   }
 
   .nav-logo .logo-img {
-    width: 60px;
-    height: 60px;
+    width: 54px;
+    height: 54px;
   }
 
   .hero-content {
