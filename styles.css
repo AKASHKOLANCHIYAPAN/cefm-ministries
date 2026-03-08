@@ -2238,14 +2238,14 @@ p {
 
   .nav-logo .logo-name {
     min-width: unset;
-    max-width: 200px;
-    font-size: 0.8rem;
-    white-space: nowrap;
+    max-width: 230px;
+    font-size: 0.88rem;
+    white-space: normal;
   }
 
   .nav-logo .logo-img {
-    width: 54px;
-    height: 54px;
+    width: 62px;
+    height: 62px;
   }
 
   .hero-content {
