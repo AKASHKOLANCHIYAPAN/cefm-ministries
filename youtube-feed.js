@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const grid = document.getElementById('recent-sermons-grid');
     const loadingText = document.getElementById('sermons-loading');
+    const homeLatestVideo = document.getElementById('home-latest-video');
+    const homeLatestLink = document.getElementById('home-latest-link');
 
-    if (!grid) return;
+    if (!grid && !homeLatestVideo) return;
 
     fetch(fetchUrl)
         .then(response => {
@@ -32,6 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (loadingText) loadingText.textContent = 'No recent sermons found.';
                 return;
             }
+
+            // Populate Home Page Latest Video if it exists
+            if (homeLatestVideo && entries.length > 0) {
+                let latestVideoId = entries[0].querySelector('id').textContent.replace('yt:video:', '');
+                homeLatestVideo.src = `https://www.youtube.com/embed/${latestVideoId}`;
+                if (homeLatestLink) {
+                    const latestLink = entries[0].querySelector('link').getAttribute('href');
+                    homeLatestLink.href = latestLink;
+                }
+            }
+
+            if (!grid) return; // If we are on a page without the grid, stop here
 
             if (loadingText) loadingText.style.display = 'none';
             grid.innerHTML = '';

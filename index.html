@@ -193,11 +193,11 @@
       <span class="section-subtitle reveal">CEFM Live</span>
       <h2 class="section-title center reveal">Watch Our Latest Sermon</h2>
       <div class="video-wrapper reveal">
-        <iframe src="https://www.youtube.com/embed/fWSApyNDCh8" title="CEFM Live Stream"
+        <iframe id="home-latest-video" src="https://www.youtube.com/embed/fWSApyNDCh8" title="CEFM Live Stream"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen loading="lazy"></iframe>
-        <a href="https://www.youtube.com/@cefmministries/live" target="_blank" rel="noopener" class="btn btn-gold"
-          style="margin-top: 20px; display: inline-flex;">📺 Watch Live on YouTube →</a>
+        <a id="home-latest-link" href="https://www.youtube.com/@cefmministries/live" target="_blank" rel="noopener"
+          class="btn btn-gold" style="margin-top: 20px; display: inline-flex;">📺 Watch Live on YouTube →</a>
         <a href="live.html" class="btn btn-outline reveal"
           style="margin-top: 36px; color: var(--gold-light); border-color: var(--gold-light);">
           View All Sermons →
@@ -307,6 +307,7 @@
     </div>
   </footer>
 
+  <script src="youtube-feed.js"></script>
   <script src="script.js"></script>
 </body>
 
