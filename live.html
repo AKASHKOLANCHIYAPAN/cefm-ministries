@@ -116,68 +116,13 @@
             <span class="section-subtitle reveal">Sermon Archive</span>
             <h2 class="section-title center reveal">Recent Sermons</h2>
 
-            <div class="ministry-grid stagger-children" style="margin-top: 40px;">
+            <div id="sermons-loading"
+                style="margin-top: 40px; color: var(--gold); font-size: 1.1rem; font-weight: 500; animation: pulse 1.5s infinite;">
+                Loading recent sermons...
+            </div>
 
-                <a href="https://www.youtube.com/live/fWSApyNDCh8" target="_blank" rel="noopener" class="ministry-card"
-                    style="text-align: left; text-decoration: none; color: inherit; cursor: pointer;">
-                    <div
-                        style="aspect-ratio: 16/9; border-radius: 12px; margin-bottom: 20px; overflow: hidden; position: relative;">
-                        <img src="https://img.youtube.com/vi/fWSApyNDCh8/hqdefault.jpg" alt="Fasting Prayer"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                        <div
-                            style="position: absolute; inset: 0; background: rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem; color: #fff; opacity: 0.9;">▶</span>
-                        </div>
-                    </div>
-                    <p
-                        style="font-size: 0.78rem; color: var(--gold); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                        Fasting Prayer</p>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Saturday Fasting Prayer Service</h3>
-                    <p style="font-size: 0.88rem;">A powerful fasting prayer service from CEFM Worship Tabernacle,
-                        Kanyakumari — seeking God's face through fervent intercession.</p>
-                    <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 12px;">CEFM Ministries • Live</p>
-                </a>
-
-                <a href="https://www.youtube.com/live/81z03VnW5ck" target="_blank" rel="noopener" class="ministry-card"
-                    style="text-align: left; text-decoration: none; color: inherit; cursor: pointer;">
-                    <div
-                        style="aspect-ratio: 16/9; border-radius: 12px; margin-bottom: 20px; overflow: hidden; position: relative;">
-                        <img src="https://img.youtube.com/vi/81z03VnW5ck/hqdefault.jpg" alt="Preparatory Prayer"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                        <div
-                            style="position: absolute; inset: 0; background: rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem; color: #fff; opacity: 0.9;">▶</span>
-                        </div>
-                    </div>
-                    <p
-                        style="font-size: 0.78rem; color: var(--gold); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                        Preparatory Prayer</p>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Preparatory Prayer Meeting</h3>
-                    <p style="font-size: 0.88rem;">A dedicated time of preparation and prayer before the Lord,
-                        strengthening the spiritual foundation for upcoming ministry work.</p>
-                    <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 12px;">CEFM Ministries • Live</p>
-                </a>
-
-                <a href="https://www.youtube.com/live/9_69zoDpTfM" target="_blank" rel="noopener" class="ministry-card"
-                    style="text-align: left; text-decoration: none; color: inherit; cursor: pointer;">
-                    <div
-                        style="aspect-ratio: 16/9; border-radius: 12px; margin-bottom: 20px; overflow: hidden; position: relative;">
-                        <img src="https://img.youtube.com/vi/9_69zoDpTfM/hqdefault.jpg" alt="Sunday Service"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                        <div
-                            style="position: absolute; inset: 0; background: rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem; color: #fff; opacity: 0.9;">▶</span>
-                        </div>
-                    </div>
-                    <p
-                        style="font-size: 0.78rem; color: var(--gold); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                        Sunday Service</p>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Sunday Worship Service</h3>
-                    <p style="font-size: 0.88rem;">The weekly Sunday worship celebration at CEFM Worship Tabernacle — a
-                        time of praise, worship, and the preaching of God's Word.</p>
-                    <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 12px;">CEFM Ministries • Live</p>
-                </a>
-
+            <div id="recent-sermons-grid" class="ministry-grid stagger-children" style="margin-top: 40px;">
+                <!-- dynamic sermons loaded here -->
             </div>
         </div>
     </section>
@@ -281,8 +226,8 @@
             <span>© 2025 CEFM Ministries. All rights reserved.</span>
             <span>Made with ♥ for the Kingdom of God</span>
         </div>
-        </div>
     </footer>
+    <script src="youtube-feed.js"></script>
     <script src="script.js"></script>
 </body>
 
