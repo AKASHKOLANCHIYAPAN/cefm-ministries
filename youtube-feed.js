@@ -15,7 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
         .then(data => {
-            const entries = Array.from(data.querySelectorAll('entry')).slice(0, 3);
+            // Get all entries
+            let entries = Array.from(data.querySelectorAll('entry'));
+
+            // Filter out videos that have '2025' or '2024' in their title
+            // Because sometimes older streams are re-uploaded recently
+            entries = entries.filter(entry => {
+                const title = entry.querySelector('title').textContent;
+                return !title.includes('2025') && !title.includes('2024') && !title.includes('2023');
+            });
+
+            // Take only the top 3 after filtering
+            entries = entries.slice(0, 3);
 
             if (entries.length === 0) {
                 if (loadingText) loadingText.textContent = 'No recent sermons found.';
