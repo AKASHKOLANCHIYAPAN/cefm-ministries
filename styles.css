@@ -8,13 +8,13 @@
 /* --- Custom Properties --- */
 :root {
   /* Primary Palette */
-  --midnight: #253024;
-  --navy: #3E503C;
-  --deep-blue: #4b6148;
-  --royal-blue: #7F886A;
-  --gold: #FF6F3D;
-  --gold-light: #ff8c61;
-  --gold-dark: #e35525;
+  --midnight: #0f172a;
+  --navy: #1e293b;
+  --deep-blue: #334155;
+  --royal-blue: #475569;
+  --gold: #D4AF37;
+  --gold-light: #f3e5ab;
+  --gold-dark: #b8860b;
   --ivory: #F3ECDB;
   --ivory-warm: #ebdcc2;
   --white: #ffffff;
@@ -24,12 +24,12 @@
   --text-dark: #1a1a2e;
   --text-muted: #5a6377;
   --text-light: #8a92a6;
-  --border-light: rgba(255, 111, 61, 0.2);
-  --border-gold: rgba(255, 111, 61, 0.4);
-  --shadow-sm: 0 2px 8px rgba(37, 48, 36, 0.08);
-  --shadow-md: 0 4px 20px rgba(37, 48, 36, 0.12);
-  --shadow-lg: 0 8px 40px rgba(37, 48, 36, 0.18);
-  --shadow-gold: 0 4px 20px rgba(255, 111, 61, 0.25);
+  --border-light: rgba(212, 175, 55, 0.2);
+  --border-gold: rgba(212, 175, 55, 0.4);
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 20px rgba(15, 23, 42, 0.12);
+  --shadow-lg: 0 8px 40px rgba(15, 23, 42, 0.18);
+  --shadow-gold: 0 4px 20px rgba(212, 175, 55, 0.25);
 
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -117,6 +117,7 @@ h5 {
 
 h1 {
   font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.3;
 }
 
 h2 {
@@ -222,7 +223,7 @@ p {
 
 .btn-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(255, 111, 61, 0.4);
+  box-shadow: 0 6px 30px rgba(212, 175, 55, 0.6);
 }
 
 .btn-outline {
@@ -261,10 +262,11 @@ p {
 }
 
 .navbar.scrolled {
-  background: rgba(37, 48, 36, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   height: 70px;
 }
 
@@ -351,19 +353,18 @@ p {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--gold-light);
-  background: rgba(255, 111, 61, 0.1);
+  background: rgba(212, 175, 55, 0.1);
 }
 
 .nav-links a.active::after {
-  content: '';
+  content: '•';
   position: absolute;
-  bottom: 2px;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 2px;
-  background: var(--gold);
-  border-radius: 1px;
+  color: var(--gold);
+  font-size: 1.2rem;
+  line-height: 0.5;
 }
 
 .nav-donate {
@@ -442,9 +443,9 @@ p {
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg,
-      rgba(37, 48, 36, 0.4) 0%,
-      rgba(37, 48, 36, 0.6) 50%,
-      rgba(37, 48, 36, 0.9) 100%);
+      rgba(15, 23, 42, 0.4) 0%,
+      rgba(15, 23, 42, 0.6) 50%,
+      rgba(15, 23, 42, 0.9) 100%);
 }
 
 .hero-content {
@@ -460,8 +461,8 @@ p {
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  background: rgba(255, 111, 61, 0.15);
-  border: 1px solid rgba(255, 111, 61, 0.3);
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 50px;
   font-size: 0.78rem;
   font-weight: 600;
@@ -550,7 +551,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at center, rgba(255, 111, 61, 0.05) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
 }
 
 .stats-grid {
@@ -627,7 +628,7 @@ p {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 111, 61, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
 }
 
 .vision-grid {
@@ -669,8 +670,8 @@ p {
   color: var(--deep-blue);
   padding: 24px;
   border-left: 3px solid var(--gold);
-  margin: 28px 0;
-  background: rgba(255, 111, 61, 0.06);
+  margin: 60px 0;
+  background: rgba(212, 175, 55, 0.06);
   border-radius: 0 12px 12px 0;
   line-height: 1.8;
 }
@@ -720,7 +721,7 @@ p {
   width: 72px;
   height: 72px;
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(255, 111, 61, 0.12), rgba(255, 111, 61, 0.04));
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -760,7 +761,7 @@ p {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 30% 50%, rgba(255, 111, 61, 0.08) 0%, transparent 50%),
+  background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 70% 50%, rgba(127, 136, 106, 0.12) 0%, transparent 50%);
 }
 
@@ -892,7 +893,7 @@ p {
   object-fit: cover;
   margin: 0 auto 24px;
   border: 4px solid var(--gold-light);
-  box-shadow: 0 4px 20px rgba(255, 111, 61, 0.3);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
 }
 
 .leader-card h3 {
@@ -1135,7 +1136,7 @@ p {
 }
 
 .schedule-table tr:hover {
-  background: rgba(255, 111, 61, 0.04);
+  background: rgba(212, 175, 55, 0.04);
 }
 
 /* --- India Map --- */
@@ -1152,7 +1153,7 @@ p {
 
 .map-container svg path {
   fill: var(--navy);
-  stroke: rgba(255, 111, 61, 0.3);
+  stroke: rgba(212, 175, 55, 0.3);
   stroke-width: 0.5;
   transition: fill 0.3s var(--ease-smooth);
 }
@@ -1487,7 +1488,7 @@ p {
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--gold-light);
-  background: rgba(255, 111, 61, 0.15);
+  background: rgba(212, 175, 55, 0.15);
   padding: 4px 12px;
   border-radius: 50px;
 }
@@ -1538,7 +1539,7 @@ p {
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--gold-dark);
-  background: rgba(255, 111, 61, 0.12);
+  background: rgba(212, 175, 55, 0.12);
   padding: 2px 10px;
   border-radius: 50px;
   letter-spacing: 0.5px;
@@ -1613,7 +1614,7 @@ p {
 }
 
 .church-list-item:hover {
-  background: rgba(255, 111, 61, 0.06);
+  background: rgba(212, 175, 55, 0.06);
 }
 
 .pastor-name-text {
@@ -1652,7 +1653,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at top center, rgba(255, 111, 61, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at top center, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
 }
 
 .page-header h1 {
@@ -1706,7 +1707,7 @@ p {
 }
 
 .song-header:hover {
-  background: rgba(255, 111, 61, 0.04);
+  background: rgba(212, 175, 55, 0.04);
 }
 
 .song-number {
@@ -1757,7 +1758,7 @@ p {
 .song-body {
   display: none;
   padding: 0 28px 28px;
-  border-top: 1px solid rgba(255, 111, 61, 0.15);
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
 }
 
 .song-card.open .song-body {
@@ -1765,7 +1766,7 @@ p {
 }
 
 .lyrics-content {
-  background: linear-gradient(135deg, rgba(255, 111, 61, 0.04), rgba(250, 248, 240, 0.8));
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.04), rgba(250, 248, 240, 0.8));
   border-radius: 16px;
   padding: 28px;
   margin-top: 20px;
@@ -1825,14 +1826,14 @@ p {
 }
 
 .gallery-cat-header:hover {
-  background: rgba(255, 111, 61, 0.04);
+  background: rgba(212, 175, 55, 0.04);
 }
 
 .gallery-cat-icon {
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(255, 111, 61, 0.12), rgba(255, 111, 61, 0.04));
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1867,7 +1868,7 @@ p {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--gold-dark);
-  background: rgba(255, 111, 61, 0.12);
+  background: rgba(212, 175, 55, 0.12);
   padding: 4px 12px;
   border-radius: 50px;
   letter-spacing: 0.5px;
@@ -1886,7 +1887,7 @@ p {
 .gallery-cat-body {
   display: none;
   padding: 0 28px 28px;
-  border-top: 1px solid rgba(255, 111, 61, 0.15);
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
 }
 
 .gallery-cat-card.open .gallery-cat-body {
@@ -2135,7 +2136,7 @@ p {
     right: 0;
     width: 280px;
     height: 100vh;
-    background: rgba(37, 48, 36, 0.98);
+    background: rgba(15, 23, 42, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
@@ -2165,7 +2166,7 @@ p {
 
   .nav-links a:hover,
   .nav-links a.active {
-    background: rgba(255, 111, 61, 0.15);
+    background: rgba(212, 175, 55, 0.15);
   }
 
   .nav-toggle {
@@ -2337,7 +2338,7 @@ p {
   position: sticky;
   top: 70px;
   z-index: 50;
-  border-bottom: 1px solid rgba(255, 111, 61, 0.15);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
 
 .gallery-filter-bar {
@@ -2363,7 +2364,7 @@ p {
 }
 
 .gallery-filter-btn:hover {
-  background: rgba(255, 111, 61, 0.1);
+  background: rgba(212, 175, 55, 0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
@@ -2422,13 +2423,13 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(37, 48, 36, 0);
+  background: rgba(15, 23, 42, 0);
   transition: background 0.3s var(--ease-smooth);
   border-radius: 12px;
 }
 
 .gallery-photo-item:hover::after {
-  background: rgba(37, 48, 36, 0.2);
+  background: rgba(15, 23, 42, 0.2);
 }
 
 .gallery-photo-item:hover {
@@ -2449,7 +2450,7 @@ p {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(37, 48, 36, 0.95);
+  background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   display: flex;
@@ -2530,7 +2531,7 @@ p {
 }
 
 .lightbox-nav:hover {
-  background: rgba(255, 111, 61, 0.3);
+  background: rgba(212, 175, 55, 0.3);
   border-color: var(--gold);
   color: var(--gold-light);
 }
@@ -2571,7 +2572,7 @@ p {
   border-color: var(--gold);
   color: var(--white);
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(255, 111, 61, 0.4);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
 }
 
 /* Gallery church address */
@@ -2668,7 +2669,7 @@ p {
 }
 
 .gallery-filter-btn:hover {
-  background: rgba(255, 111, 61, 0.1);
+  background: rgba(212, 175, 55, 0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
