@@ -9,13 +9,13 @@
 :root {
   /* Primary Palette */
   --midnight: #1A5B96;
-  --faith-red: #D32F2F;
+  --faith-red: #2D9344;
   --navy: #10416b;
   --deep-blue: #0e3759;
   --royal-blue: #7F886A;
-  --gold: #2D9344;
-  --gold-light: #3cb556;
-  --gold-dark: #206d31;
+  --gold: #D32F2F;
+  --gold-light: #E53935;
+  --gold-dark: #B71C1C;
   --ivory: #F3ECDB;
   --ivory-warm: #ebdcc2;
   --white: #ffffff;
@@ -25,12 +25,12 @@
   --text-dark: #1A1A1A;
   --text-muted: #5a6377;
   --text-light: #8a92a6;
-  --border-light: rgba(45, 147, 68, 0.2);
-  --border-gold: rgba(45, 147, 68, 0.4);
+  --border-light: rgba(211, 47, 47, 0.2);
+  --border-gold: rgba(211, 47, 47, 0.4);
   --shadow-sm: 0 2px 8px rgba(26, 91, 150, 0.08);
   --shadow-md: 0 4px 20px rgba(26, 91, 150, 0.12);
   --shadow-lg: 0 8px 40px rgba(26, 91, 150, 0.18);
-  --shadow-gold: 0 4px 20px rgba(45, 147, 68, 0.25);
+  --shadow-gold: 0 4px 20px rgba(211, 47, 47, 0.25);
 
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -223,7 +223,7 @@ p {
 
 .btn-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(45, 147, 68, 0.4);
+  box-shadow: 0 6px 30px rgba(211, 47, 47, 0.4);
 }
 
 .btn-outline {
@@ -352,7 +352,7 @@ p {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--gold-light);
-  background: rgba(45, 147, 68, 0.1);
+  background: rgba(211, 47, 47, 0.1);
 }
 
 .nav-links a.active::after {
@@ -461,8 +461,8 @@ p {
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  background: rgba(45, 147, 68, 0.15);
-  border: 1px solid rgba(45, 147, 68, 0.3);
+  background: rgba(211, 47, 47, 0.15);
+  border: 1px solid rgba(211, 47, 47, 0.3);
   border-radius: 50px;
   font-size: 0.78rem;
   font-weight: 600;
@@ -491,7 +491,7 @@ p {
 .hero-verse {
   font-family: var(--font-heading);
   font-size: clamp(1.05rem, 2vw, 1.3rem);
-  color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
   font-style: italic;
   margin-bottom: 40px;
   line-height: 1.8;
@@ -523,7 +523,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.75rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -551,7 +551,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at center, rgba(45, 147, 68, 0.05) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(211, 47, 47, 0.05) 0%, transparent 70%);
 }
 
 .stats-grid {
@@ -579,7 +579,7 @@ p {
 .stat-label {
   font-size: 0.85rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.95);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -628,7 +628,7 @@ p {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(45, 147, 68, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(211, 47, 47, 0.08) 0%, transparent 70%);
 }
 
 .vision-grid {
@@ -671,7 +671,7 @@ p {
   padding: 24px;
   border-left: 3px solid var(--gold);
   margin: 28px 0;
-  background: rgba(45, 147, 68, 0.06);
+  background: rgba(211, 47, 47, 0.06);
   border-radius: 0 12px 12px 0;
   line-height: 1.8;
 }
@@ -721,7 +721,7 @@ p {
   width: 72px;
   height: 72px;
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(45, 147, 68, 0.12), rgba(45, 147, 68, 0.04));
+  background: linear-gradient(135deg, rgba(211, 47, 47, 0.12), rgba(211, 47, 47, 0.04));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -761,8 +761,8 @@ p {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 30% 50%, rgba(45, 147, 68, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 70% 50%, rgba(45, 147, 68, 0.12) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 50%, rgba(211, 47, 47, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 70% 50%, rgba(211, 47, 47, 0.12) 0%, transparent 50%);
 }
 
 .cta-banner h2 {
@@ -772,7 +772,7 @@ p {
 }
 
 .cta-banner p {
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   font-size: 1.1rem;
   max-width: 600px;
   margin: 0 auto 36px;
@@ -893,7 +893,7 @@ p {
   object-fit: cover;
   margin: 0 auto 24px;
   border: 4px solid var(--gold-light);
-  box-shadow: 0 4px 20px rgba(45, 147, 68, 0.3);
+  box-shadow: 0 4px 20px rgba(211, 47, 47, 0.3);
 }
 
 .leader-card h3 {
@@ -1136,7 +1136,7 @@ p {
 }
 
 .schedule-table tr:hover {
-  background: rgba(45, 147, 68, 0.04);
+  background: rgba(211, 47, 47, 0.04);
 }
 
 /* --- India Map --- */
@@ -1153,7 +1153,7 @@ p {
 
 .map-container svg path {
   fill: var(--navy);
-  stroke: rgba(45, 147, 68, 0.3);
+  stroke: rgba(211, 47, 47, 0.3);
   stroke-width: 0.5;
   transition: fill 0.3s var(--ease-smooth);
 }
@@ -1185,7 +1185,7 @@ p {
 /* --- Footer --- */
 .footer {
   background: var(--midnight);
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   padding: 80px 0 0;
 }
 
@@ -1215,7 +1215,7 @@ p {
 }
 
 .footer-brand p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
   line-height: 1.7;
 }
@@ -1232,7 +1232,7 @@ p {
 
 .footer-links a {
   display: block;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
   padding: 6px 0;
   transition: all 0.3s;
@@ -1249,7 +1249,7 @@ p {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.88rem;
   margin-bottom: 12px;
 }
@@ -1488,7 +1488,7 @@ p {
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--gold-light);
-  background: rgba(45, 147, 68, 0.15);
+  background: rgba(211, 47, 47, 0.15);
   padding: 4px 12px;
   border-radius: 50px;
 }
@@ -1539,7 +1539,7 @@ p {
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--gold-dark);
-  background: rgba(45, 147, 68, 0.12);
+  background: rgba(211, 47, 47, 0.12);
   padding: 2px 10px;
   border-radius: 50px;
   letter-spacing: 0.5px;
@@ -1614,7 +1614,7 @@ p {
 }
 
 .church-list-item:hover {
-  background: rgba(45, 147, 68, 0.06);
+  background: rgba(211, 47, 47, 0.06);
 }
 
 .pastor-name-text {
@@ -1653,7 +1653,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at top center, rgba(45, 147, 68, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at top center, rgba(211, 47, 47, 0.08) 0%, transparent 60%);
 }
 
 .page-header h1 {
@@ -1707,7 +1707,7 @@ p {
 }
 
 .song-header:hover {
-  background: rgba(45, 147, 68, 0.04);
+  background: rgba(211, 47, 47, 0.04);
 }
 
 .song-number {
@@ -1758,7 +1758,7 @@ p {
 .song-body {
   display: none;
   padding: 0 28px 28px;
-  border-top: 1px solid rgba(45, 147, 68, 0.15);
+  border-top: 1px solid rgba(211, 47, 47, 0.15);
 }
 
 .song-card.open .song-body {
@@ -1766,7 +1766,7 @@ p {
 }
 
 .lyrics-content {
-  background: linear-gradient(135deg, rgba(45, 147, 68, 0.04), rgba(250, 248, 240, 0.8));
+  background: linear-gradient(135deg, rgba(211, 47, 47, 0.04), rgba(250, 248, 240, 0.8));
   border-radius: 16px;
   padding: 28px;
   margin-top: 20px;
@@ -1826,14 +1826,14 @@ p {
 }
 
 .gallery-cat-header:hover {
-  background: rgba(45, 147, 68, 0.04);
+  background: rgba(211, 47, 47, 0.04);
 }
 
 .gallery-cat-icon {
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(45, 147, 68, 0.12), rgba(45, 147, 68, 0.04));
+  background: linear-gradient(135deg, rgba(211, 47, 47, 0.12), rgba(211, 47, 47, 0.04));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1868,7 +1868,7 @@ p {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--gold-dark);
-  background: rgba(45, 147, 68, 0.12);
+  background: rgba(211, 47, 47, 0.12);
   padding: 4px 12px;
   border-radius: 50px;
   letter-spacing: 0.5px;
@@ -1887,7 +1887,7 @@ p {
 .gallery-cat-body {
   display: none;
   padding: 0 28px 28px;
-  border-top: 1px solid rgba(45, 147, 68, 0.15);
+  border-top: 1px solid rgba(211, 47, 47, 0.15);
 }
 
 .gallery-cat-card.open .gallery-cat-body {
@@ -2040,7 +2040,7 @@ p {
   bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.95);
   font-size: 0.9rem;
   font-weight: 500;
   z-index: 10001;
@@ -2166,7 +2166,7 @@ p {
 
   .nav-links a:hover,
   .nav-links a.active {
-    background: rgba(45, 147, 68, 0.15);
+    background: rgba(211, 47, 47, 0.15);
   }
 
   .nav-toggle {
@@ -2338,7 +2338,7 @@ p {
   position: sticky;
   top: 70px;
   z-index: 50;
-  border-bottom: 1px solid rgba(45, 147, 68, 0.15);
+  border-bottom: 1px solid rgba(211, 47, 47, 0.15);
 }
 
 .gallery-filter-bar {
@@ -2364,7 +2364,7 @@ p {
 }
 
 .gallery-filter-btn:hover {
-  background: rgba(45, 147, 68, 0.1);
+  background: rgba(211, 47, 47, 0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
@@ -2497,7 +2497,7 @@ p {
   right: 28px;
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   font-size: 2.5rem;
   cursor: pointer;
   transition: all 0.3s var(--ease-smooth);
@@ -2531,7 +2531,7 @@ p {
 }
 
 .lightbox-nav:hover {
-  background: rgba(45, 147, 68, 0.3);
+  background: rgba(211, 47, 47, 0.3);
   border-color: var(--gold);
   color: var(--gold-light);
 }
@@ -2560,7 +2560,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   transition: all 0.3s var(--ease-smooth);
   font-size: 0.78rem;
   font-weight: 500;
@@ -2572,7 +2572,7 @@ p {
   border-color: var(--gold);
   color: var(--white);
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(45, 147, 68, 0.4);
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.4);
 }
 
 /* Gallery church address */
@@ -2669,7 +2669,7 @@ p {
 }
 
 .gallery-filter-btn:hover {
-  background: rgba(45, 147, 68, 0.1);
+  background: rgba(211, 47, 47, 0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
@@ -2679,4 +2679,22 @@ p {
   color: var(--white);
   border-color: var(--gold);
   box-shadow: var(--shadow-gold);
+}
+
+
+/* Boost White Text Boldness and Brightness */
+.nav-links a, 
+.hero-verse, 
+.hero h1, 
+.stat-label, 
+.cta-banner p, 
+.cta-banner h2,
+.footer p, 
+.footer-links a, 
+.footer-contact p, 
+.footer-brand p,
+.gallery-filter-btn {
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
