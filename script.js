@@ -247,4 +247,57 @@ document.addEventListener('DOMContentLoaded', () => {
     if (el) el.classList.toggle('open');
   };
 
+  // ─── Daily Devotional Promises ───
+  const dailyDevotional = document.getElementById('devotional');
+  if (dailyDevotional) {
+    const dailyPromises = [
+      { text: '"Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness."', ref: '— Isaiah 41:10 (KJV)', desc: 'God promises His presence and strength in every situation. You never have to face your battles alone.' },
+      { text: '"For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end."', ref: '— Jeremiah 29:11 (KJV)', desc: 'God has a beautiful, sovereign plan for your life. Trust in His timing and His perfect will.' },
+      { text: '"Trust in the LORD with all thine heart; and lean not unto thine own understanding."', ref: '— Proverbs 3:5 (KJV)', desc: 'When you cannot trace His hand, trust His heart. He will direct your paths perfectly.' },
+      { text: '"But my God shall supply all your need according to his riches in glory by Christ Jesus."', ref: '— Philippians 4:19 (KJV)', desc: 'We serve a God of abundance. He knows your needs and promises to provide for you.' },
+      { text: '"And we know that all things work together for good to them that love God, to them who are the called according to his purpose."', ref: '— Romans 8:28 (KJV)', desc: 'Even in difficulties, God is orchestrating everything to work out for your ultimate good.' },
+      { text: '"Come unto me, all ye that labour and are heavy laden, and I will give you rest."', ref: '— Matthew 11:28 (KJV)', desc: 'Bring your burdens to Jesus. He is your resting place and the anchor for your weary soul.' },
+      { text: '"But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles..."', ref: '— Isaiah 40:31 (KJV)', desc: 'Waiting is not wasted time. In His presence, you will find supernatural strength and soaring grace.' },
+      { text: '"Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you..."', ref: '— John 14:27 (KJV)', desc: 'Receive the peace of Christ today. It transcends all earthly turmoil and calms every storm.' },
+      { text: '"I can do all things through Christ which strengtheneth me."', ref: '— Philippians 4:13 (KJV)', desc: 'Your limitations are no match for His power working within you. Step out in bold faith.' },
+      { text: '"The LORD is my shepherd; I shall not want."', ref: '— Psalm 23:1 (KJV)', desc: 'The Creator of the cosmos is your personal shepherd. He guides, protects, and restores your soul.' },
+      { text: '"Call unto me, and I will answer thee, and shew thee great and mighty things, which thou knowest not."', ref: '— Jeremiah 33:3 (KJV)', desc: 'God is ready and waiting for your prayers. He promises to reveal His extraordinary glory to you.' },
+      { text: '"If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him."', ref: '— James 1:5 (KJV)', desc: 'When you are uncertain, seek His wisdom. He gives it freely, generously, and without finding fault.' },
+      { text: '"For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind."', ref: '— 2 Timothy 1:7 (KJV)', desc: 'Do not let anxiety rule your day. You have been given heavenly power, divine love, and total clarity.' },
+      { text: '"The name of the LORD is a strong tower: the righteous runneth into it, and is safe."', ref: '— Proverbs 18:10 (KJV)', desc: 'When attacks come, hide yourself in His name. You are secure within His mighty fortress.' },
+      { text: '"But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you."', ref: '— Matthew 6:33 (KJV)', desc: 'If you take care of the things that are important to God, He will take care of the things important to you.' },
+      { text: '"He healeth the broken in heart, and bindeth up their wounds."', ref: '— Psalm 147:3 (KJV)', desc: 'No heartbreak is too shattered for His healing hands. Allow Him to softly bind your wounds today.' },
+      { text: '"Create in me a clean heart, O God; and renew a right spirit within me."', ref: '— Psalm 51:10 (KJV)', desc: 'God specializes in fresh starts and new beginnings. Allow Him to renew your spirit completely today.' },
+      { text: '"Delight thyself also in the LORD; and he shall give thee the desires of thine heart."', ref: '— Psalm 37:4 (KJV)', desc: 'When He becomes your greatest joy, He aligns your deepest desires with His magnificent will.' },
+      { text: '"For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord."', ref: '— Romans 6:23 (KJV)', desc: 'Salvation cannot be earned, only received. Rejoice in the profound grace of eternal life.' },
+      { text: '"Being confident of this very thing, that he which hath begun a good work in you will perform it until the day of Jesus Christ:"', ref: '— Philippians 1:6 (KJV)', desc: 'God does not leave things half-finished. He will patiently complete His masterpiece within you.' },
+      { text: '"Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven."', ref: '— Matthew 5:16 (KJV)', desc: 'Your testimony is meant to illuminate the darkness. Shine brightly for His kingdom today.' },
+      { text: '"Now faith is the substance of things hoped for, the evidence of things not seen."', ref: '— Hebrews 11:1 (KJV)', desc: 'Faith is knowing He is working even when you cannot see the results. Keep believing in His promises.' },
+      { text: '"And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ\'s sake hath forgiven you."', ref: '— Ephesians 4:32 (KJV)', desc: 'Unleash the power of forgiveness and kindness into the world, mirroring the immense grace you received.' },
+      { text: '"I will praise thee; for I am fearfully and wonderfully made..."', ref: '— Psalm 139:14 (KJV)', desc: 'You are an intentional, glorious creation of the Almighty. Know your worth in His eyes.' },
+      { text: '"But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith..."', ref: '— Galatians 5:22 (KJV)', desc: 'Instead of striving in the flesh, yield to the Holy Spirit and let these divine fruits blossom.' },
+      { text: '"Thy word is a lamp unto my feet, and a light unto my path."', ref: '— Psalm 119:105 (KJV)', desc: 'When the future looks dark, look to scripture. It will illuminate your next step safely.' },
+      { text: '"If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness."', ref: '— 1 John 1:9 (KJV)', desc: 'You are never too far gone. Repentance unlocks an infinite well of cleansing grace.' },
+      { text: '"He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty."', ref: '— Psalm 91:1 (KJV)', desc: 'Find your refuge in intimate prayer. There is unbeatable protection in the shadow of the Most High.' },
+      { text: '"Every good gift and every perfect gift is from above, and cometh down from the Father of lights..."', ref: '— James 1:17 (KJV)', desc: 'Count your blessings today. Every joyful moment and gracious provision descends from Heaven.' },
+      { text: '"Rejoice in the Lord alway: and again I say, Rejoice."', ref: '— Philippians 4:4 (KJV)', desc: 'Joy is a decision, not merely a feeling. Choose to rejoice in His steadfast goodness right now.' },
+      { text: '"For God so loved the world, that He gave His only begotten Son, that whosoever believeth in Him should not perish, but have everlasting life."', ref: '— John 3:16 (KJV)', desc: 'This is the greatest truth. Let the unfathomable sacrifice of God anchor your soul eternally.' }
+    ];
+
+    const todayDate = new Date();
+    // Use day of the month (1-31), subtracting 1 for zero-indexed array
+    const dayIndex = (todayDate.getDate() - 1) % dailyPromises.length;
+    
+    const verseTextEl = document.getElementById('daily-verse-text');
+    const verseRefEl = document.getElementById('daily-verse-ref');
+    const devTextEl = document.getElementById('daily-devotional-text');
+
+    if (verseTextEl && verseRefEl && devTextEl) {
+      const todayPromise = dailyPromises[dayIndex];
+      verseTextEl.textContent = todayPromise.text;
+      verseRefEl.textContent = todayPromise.ref;
+      devTextEl.textContent = todayPromise.desc;
+    }
+  }
+
 });
