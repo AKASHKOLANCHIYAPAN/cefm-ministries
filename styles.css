@@ -8,15 +8,16 @@
 /* --- Custom Properties --- */
 :root {
   /* Primary Palette */
-  --midnight: #0D1B2A;
-  --navy: #1B263B;
-  --deep-blue: #415A77;
-  --royal-blue: #778DA9;
-  --gold: #D4AF37;
-  --gold-light: #F3E5AB;
-  --gold-dark: #AA7C11;
-  --ivory: #F8F6F0;
-  --ivory-warm: #EFECE1;
+  --midnight: #1B241C;
+  --navy: #283529;
+  --deep-blue: #4A5B4D;
+  --royal-blue: #7F9382;
+  --gold: #C29B38;
+  --gold-light: #E6D8B8;
+  --gold-dark: #9E7A22;
+  --gold-deep: #A07F2D; /* Vintage gold deep for solid elements */
+  --ivory: #FAF8F5;
+  --ivory-warm: #F2EDE4;
   --white: #ffffff;
   --cream: #FFFDF9;
 
@@ -24,12 +25,12 @@
   --text-dark: #111827;
   --text-muted: #4B5563;
   --text-light: #9CA3AF;
-  --border-light: rgba(212, 175, 55, 0.2);
-  --border-gold: rgba(212, 175, 55, 0.4);
-  --shadow-sm: 0 2px 8px rgba(13, 27, 42, 0.08);
-  --shadow-md: 0 4px 20px rgba(13, 27, 42, 0.12);
-  --shadow-lg: 0 8px 40px rgba(13, 27, 42, 0.18);
-  --shadow-gold: 0 4px 20px rgba(212, 175, 55, 0.25);
+  --border-light: rgba(194, 155, 56, 0.2);
+  --border-gold: rgba(194, 155, 56, 0.4);
+  --shadow-sm: 0 2px 8px rgba(27, 36, 28, 0.08);
+  --shadow-md: 0 4px 20px rgba(27, 36, 28, 0.12);
+  --shadow-lg: 0 8px 40px rgba(27, 36, 28, 0.18);
+  --shadow-gold: 0 4px 20px rgba(194, 155, 56, 0.25);
 
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -75,7 +76,7 @@ body {
   flex-direction: column;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Crect x='10' y='2' width='4' height='20' rx='1' fill='%23e35525'/%3E%3Crect x='4' y='7' width='16' height='4' rx='1' fill='%23e35525'/%3E%3C/svg%3E") 12 12, auto;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Crect x='10' y='2' width='4' height='20' rx='1' fill='%23C29B38'/%3E%3Crect x='4' y='7' width='16' height='4' rx='1' fill='%23C29B38'/%3E%3C/svg%3E") 12 12, auto;
 }
 
 img {
@@ -222,7 +223,7 @@ p {
 
 .btn-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 6px 30px rgba(194, 155, 56, 0.4);
 }
 
 .btn-outline {
@@ -261,7 +262,7 @@ p {
 }
 
 .navbar.scrolled {
-  background: rgba(13, 27, 42, 0.95);
+  background: rgba(27, 36, 28, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
@@ -354,7 +355,7 @@ p {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--gold-light);
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(194, 155, 56, 0.1);
 }
 
 .nav-links a.active::after {
@@ -433,7 +434,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 30%, rgba(194, 155, 56, 0.08) 0%, transparent 70%);
 }
 
 .hero-content {
@@ -455,8 +456,8 @@ p {
   align-items: center;
   gap: 8px;
   padding: 8px 20px;
-  background: rgba(212, 175, 55, 0.15);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  background: rgba(194, 155, 56, 0.15);
+  border: 1px solid rgba(194, 155, 56, 0.3);
   border-radius: 50px;
   font-size: 0.78rem;
   font-weight: 600;
@@ -557,7 +558,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(194, 155, 56, 0.05) 0%, transparent 70%);
 }
 
 .stats-grid {
@@ -634,7 +635,7 @@ p {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(194, 155, 56, 0.08) 0%, transparent 70%);
 }
 
 .vision-grid {
@@ -677,7 +678,7 @@ p {
   padding: 24px;
   border-left: 3px solid var(--gold);
   margin: 28px 0;
-  background: rgba(212, 175, 55, 0.06);
+  background: rgba(194, 155, 56, 0.06);
   border-radius: 0 12px 12px 0;
   line-height: 1.8;
 }
@@ -727,7 +728,7 @@ p {
   width: 72px;
   height: 72px;
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
+  background: linear-gradient(135deg, rgba(194, 155, 56, 0.12), rgba(194, 155, 56, 0.04));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -767,7 +768,7 @@ p {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+  background: radial-gradient(circle at 30% 50%, rgba(194, 155, 56, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 70% 50%, rgba(127, 136, 106, 0.12) 0%, transparent 50%);
 }
 
@@ -899,7 +900,7 @@ p {
   object-fit: cover;
   margin: 0 auto 24px;
   border: 4px solid var(--gold-light);
-  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 20px rgba(194, 155, 56, 0.3);
 }
 
 .leader-card h3 {
@@ -1142,7 +1143,7 @@ p {
 }
 
 .schedule-table tr:hover {
-  background: rgba(212, 175, 55, 0.04);
+  background: rgba(194, 155, 56, 0.04);
 }
 
 /* --- India Map --- */
@@ -1159,7 +1160,7 @@ p {
 
 .map-container svg path {
   fill: var(--navy);
-  stroke: rgba(212, 175, 55, 0.3);
+  stroke: rgba(194, 155, 56, 0.3);
   stroke-width: 0.5;
   transition: fill 0.3s var(--ease-smooth);
 }
@@ -1494,7 +1495,7 @@ p {
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--gold-light);
-  background: rgba(212, 175, 55, 0.15);
+  background: rgba(194, 155, 56, 0.15);
   padding: 4px 12px;
   border-radius: 50px;
 }
@@ -1545,7 +1546,7 @@ p {
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--gold-dark);
-  background: rgba(212, 175, 55, 0.12);
+  background: rgba(194, 155, 56, 0.12);
   padding: 2px 10px;
   border-radius: 50px;
   letter-spacing: 0.5px;
@@ -1620,7 +1621,7 @@ p {
 }
 
 .church-list-item:hover {
-  background: rgba(212, 175, 55, 0.06);
+  background: rgba(194, 155, 56, 0.06);
 }
 
 .pastor-name-text {
@@ -1659,7 +1660,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at top center, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at top center, rgba(194, 155, 56, 0.08) 0%, transparent 60%);
 }
 
 .page-header h1 {
@@ -1713,7 +1714,7 @@ p {
 }
 
 .song-header:hover {
-  background: rgba(212, 175, 55, 0.04);
+  background: rgba(194, 155, 56, 0.04);
 }
 
 .song-number {
@@ -1764,7 +1765,7 @@ p {
 .song-body {
   display: none;
   padding: 0 28px 28px;
-  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  border-top: 1px solid rgba(194, 155, 56, 0.15);
 }
 
 .song-card.open .song-body {
@@ -1772,7 +1773,7 @@ p {
 }
 
 .lyrics-content {
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.04), rgba(250, 248, 240, 0.8));
+  background: linear-gradient(135deg, rgba(194, 155, 56, 0.04), rgba(250, 248, 240, 0.8));
   border-radius: 16px;
   padding: 28px;
   margin-top: 20px;
@@ -1832,14 +1833,14 @@ p {
 }
 
 .gallery-cat-header:hover {
-  background: rgba(212, 175, 55, 0.04);
+  background: rgba(194, 155, 56, 0.04);
 }
 
 .gallery-cat-icon {
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
+  background: linear-gradient(135deg, rgba(194, 155, 56, 0.12), rgba(194, 155, 56, 0.04));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1874,7 +1875,7 @@ p {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--gold-dark);
-  background: rgba(212, 175, 55, 0.12);
+  background: rgba(194, 155, 56, 0.12);
   padding: 4px 12px;
   border-radius: 50px;
   letter-spacing: 0.5px;
@@ -1893,7 +1894,7 @@ p {
 .gallery-cat-body {
   display: none;
   padding: 0 28px 28px;
-  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  border-top: 1px solid rgba(194, 155, 56, 0.15);
 }
 
 .gallery-cat-card.open .gallery-cat-body {
@@ -2174,7 +2175,7 @@ p {
     right: 0;
     width: 280px;
     height: 100vh;
-    background: rgba(13, 27, 42, 0.98);
+    background: rgba(27, 36, 28, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
@@ -2204,7 +2205,7 @@ p {
 
   .nav-links a:hover,
   .nav-links a.active {
-    background: rgba(212, 175, 55, 0.15);
+    background: rgba(194, 155, 56, 0.15);
   }
 
   .nav-toggle {
@@ -2281,16 +2282,17 @@ p {
 
   .nav-logo .logo-name {
     min-width: unset;
-    max-width: 240px;
-    font-size: 0.88rem;
+    max-width: 280px;
+    font-size: 0.98rem;
+    font-weight: 700;
     white-space: normal;
     line-height: 1.25;
     letter-spacing: 0.2px;
   }
 
   .nav-logo .logo-img {
-    width: 52px;
-    height: 52px;
+    width: 60px;
+    height: 60px;
   }
 
   .hero-content {
@@ -2392,7 +2394,7 @@ p {
   position: sticky;
   top: 70px;
   z-index: 50;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  border-bottom: 1px solid rgba(194, 155, 56, 0.15);
 }
 
 .gallery-filter-bar {
@@ -2418,7 +2420,7 @@ p {
 }
 
 .gallery-filter-btn:hover {
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(194, 155, 56, 0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
@@ -2477,13 +2479,13 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(13, 27, 42, 0);
+  background: rgba(27, 36, 28, 0);
   transition: background 0.3s var(--ease-smooth);
   border-radius: 12px;
 }
 
 .gallery-photo-item:hover::after {
-  background: rgba(13, 27, 42, 0.2);
+  background: rgba(27, 36, 28, 0.2);
 }
 
 .gallery-photo-item:hover {
@@ -2504,7 +2506,7 @@ p {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(13, 27, 42, 0.95);
+  background: rgba(27, 36, 28, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   display: flex;
@@ -2585,7 +2587,7 @@ p {
 }
 
 .lightbox-nav:hover {
-  background: rgba(212, 175, 55, 0.3);
+  background: rgba(194, 155, 56, 0.3);
   border-color: var(--gold);
   color: var(--gold-light);
 }
@@ -2626,7 +2628,7 @@ p {
   border-color: var(--gold);
   color: var(--white);
   transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 12px rgba(194, 155, 56, 0.4);
 }
 
 /* Gallery church address */
@@ -2723,7 +2725,7 @@ p {
 }
 
 .gallery-filter-btn:hover {
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(194, 155, 56, 0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
