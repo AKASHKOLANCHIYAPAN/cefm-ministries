@@ -935,19 +935,19 @@ function renderChurches() {
       const pastors = districtGroups[distName];
       html += `
         <div class="district-section" style="margin-bottom: 30px;">
-          <div class="district-header" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 8px; margin-bottom: 16px;">
-            <h4 style="color: var(--midnight-blue); font-size: 1.25rem;">${distName} District</h4>
-            <span class="district-count" style="color: #666; font-size: 0.9rem;">${pastors.length} ${pastors.length === 1 ? 'Church' : 'Churches'}</span>
+          <div class="district-header" style="border-bottom: 1px solid var(--border-light); padding-bottom: 8px; margin-bottom: 16px;">
+            <h4 style="color: var(--midnight); font-size: 1.25rem;">${distName} District</h4>
+            <span class="district-count" style="color: var(--text-muted); font-size: 0.9rem;">${pastors.length} ${pastors.length === 1 ? 'Church' : 'Churches'}</span>
           </div>
           <div class="church-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">`;
 
       pastors.forEach(pastor => {
         html += `
-            <div class="church-list-item classic-card" style="background: #fff; border: 1px solid rgba(212,175,55,0.3); border-radius: 8px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border-top: 4px solid var(--gold-light); transition: transform 0.3s ease;">
-              <h5 class="church-name-text" style="color: var(--midnight-blue); font-size: 1.15rem; margin-bottom: 12px; font-weight: 700;">⛪ ${pastor.churchName || 'CEFM Church'}</h5>
+            <div class="church-list-item classic-card" style="background: var(--card-bg); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border-light); border-radius: 12px; padding: 20px; box-shadow: var(--shadow-sm); border-top: 4px solid var(--gold); transition: transform 0.3s ease;">
+              <h5 class="church-name-text" style="color: var(--midnight); font-size: 1.15rem; margin-bottom: 12px; font-weight: 700;">⛪ ${pastor.churchName || 'CEFM Church'}</h5>
               <div class="pastor-details-wrapper" style="display: flex; flex-direction: column; gap: 8px;">
-                <span class="pastor-name-text" style="color: #333; font-weight: 600; font-size: 0.95rem;">Pastor: ${formatName(pastor.name)}</span>
-                <span class="pastor-address-text" style="color: #555; font-size: 0.9rem; line-height: 1.5;">📍 Address: ${formatAddress(pastor.address)}</span>
+                <span class="pastor-name-text" style="color: var(--text-dark); font-weight: 600; font-size: 0.95rem;">Pastor: ${formatName(pastor.name)}</span>
+                <span class="pastor-address-text" style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">📍 Address: ${formatAddress(pastor.address)}</span>
               </div>
             </div>`;
       });

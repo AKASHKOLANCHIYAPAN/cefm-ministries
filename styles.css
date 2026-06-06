@@ -602,12 +602,14 @@ p {
 
 /* --- Card Styles ---  */
 .card {
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: all 0.4s var(--ease-smooth);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-light);
 }
 
 .card:hover {
@@ -616,12 +618,20 @@ p {
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
   border-radius: 20px;
   padding: 32px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s var(--ease-smooth);
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--gold);
 }
 
 /* --- Founder / Vision Section --- */
@@ -968,7 +978,10 @@ p {
 .pastor-card {
   text-align: center;
   padding: 28px 20px;
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
   border-radius: 16px;
   box-shadow: var(--shadow-sm);
   transition: all 0.3s var(--ease-smooth);
@@ -1057,7 +1070,9 @@ p {
 }
 
 .donate-card {
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border-radius: 24px;
   padding: 40px;
   box-shadow: var(--shadow-md);
@@ -1089,7 +1104,10 @@ p {
 .bank-details {
   max-width: 600px;
   margin: 48px auto 0;
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
   border-radius: 20px;
   padding: 36px;
   box-shadow: var(--shadow-sm);
@@ -1117,12 +1135,14 @@ p {
   color: var(--text-muted);
 }
 
-/* --- Schedule --- */
 .schedule-table {
   width: 100%;
   max-width: 800px;
   margin: 40px auto;
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -1468,8 +1488,10 @@ p {
   margin-bottom: 16px;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  background: var(--white);
+  border: 1px solid var(--border-light);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   box-shadow: var(--shadow-sm);
   transition: all 0.3s var(--ease-smooth);
 }
@@ -2446,7 +2468,7 @@ p {
 
 .gallery-filter-btn.active {
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-  color: var(--white);
+  color: var(--midnight);
   border-color: var(--gold);
   box-shadow: var(--shadow-gold);
 }
@@ -2752,7 +2774,7 @@ p {
 
 .gallery-filter-btn.active {
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-  color: var(--white);
+  color: var(--midnight);
   border-color: var(--gold);
   box-shadow: var(--shadow-gold);
 }
