@@ -273,12 +273,15 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 40px; /* far left/right corner alignment */
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   z-index: 1001;
 }
 
@@ -331,20 +334,20 @@ p {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1px;
+  gap: 8px; /* spaced beautifully */
 }
 
 .nav-links a {
-  padding: 6px 7px;
+  padding: 8px 12px; /* perfect placing and padding */
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 0.78rem;
+  font-size: 0.82rem; /* highly readable and elegant */
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   border-radius: 8px;
   transition: all 0.3s var(--ease-smooth);
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   white-space: nowrap;
 }
 
@@ -372,7 +375,7 @@ p {
   color: var(--white) !important;
   border-radius: 50px !important;
   font-weight: 600 !important;
-  margin-left: 4px;
+  margin-left: 8px;
 }
 
 .nav-donate:hover {
@@ -2127,8 +2130,40 @@ p {
   line-height: 1.5 !important;
 }
 
+/* --- Responsive — Intermediate Desktop --- */
+@media (min-width: 969px) and (max-width: 1250px) {
+  .navbar .container {
+    padding: 0 20px;
+  }
+  .nav-logo {
+    gap: 8px;
+  }
+  .nav-logo .logo-name {
+    font-size: 0.92rem;
+    max-width: 240px;
+  }
+  .nav-logo .logo-img {
+    width: 44px;
+    height: 44px;
+  }
+  .nav-links {
+    gap: 4px;
+  }
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: 0.76rem;
+  }
+  .nav-donate {
+    padding: 6px 14px !important;
+    margin-left: 4px;
+  }
+}
+
 /* --- Responsive — Tablet --- */
 @media (max-width: 968px) {
+  .navbar .container {
+    padding: 0 24px;
+  }
   .nav-links {
     position: fixed;
     top: 0;
