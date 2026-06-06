@@ -2295,15 +2295,16 @@ p {
 
   .nav-logo .logo-name {
     min-width: unset;
-    max-width: 270px;
-    font-size: 1.05rem;
+    max-width: 220px;
+    font-size: 0.82rem;
     white-space: normal;
     line-height: 1.25;
+    letter-spacing: 0.2px;
   }
 
   .nav-logo .logo-img {
-    width: 72px;
-    height: 72px;
+    width: 46px;
+    height: 46px;
   }
 
   .hero-content {
@@ -2322,8 +2323,23 @@ p {
     gap: 16px;
   }
 
+  .stat-item:nth-child(5) {
+    grid-column: span 2;
+  }
+
   .stat-number {
     font-size: 2rem;
+  }
+
+  .song-header {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .song-number {
+    min-width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
   }
 
   .ministry-grid {
