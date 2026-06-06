@@ -9,8 +9,8 @@
 :root {
   /* Primary Palette — Sacred Teal & Antiqued Brass */
   --midnight: #0C2D36; /* Deep Sacred Teal */
-  --card-bg: rgba(255, 255, 255, 0.72); /* Translucent glass card background */
-  --glass-blur: blur(22px);
+  --card-bg: rgba(255, 255, 255, 0.78); /* Translucent glass card background */
+  --glass-blur: blur(12px);
   --navy: #0A2530; /* Abyssal Teal */
   --deep-blue: #143D48; /* Cathedral Teal */
   --royal-blue: #2A6B72; /* Muted Verdigris */
@@ -44,7 +44,7 @@
   --nav-height: 80px;
 
   /* Transitions */
-  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
   --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -78,7 +78,6 @@ body {
   flex-direction: column;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Crect x='10' y='2' width='4' height='20' rx='1' fill='%23B8934B'/%3E%3Crect x='4' y='7' width='16' height='4' rx='1' fill='%23B8934B'/%3E%3C/svg%3E") 12 12, auto;
 }
 
 img {
@@ -89,7 +88,7 @@ img {
 a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s var(--ease-smooth);
+  transition: color 0.2s var(--ease-smooth);
 }
 
 ul {
@@ -197,7 +196,7 @@ p {
   letter-spacing: 0.5px;
   border: none;
   cursor: pointer;
-  transition: all 0.4s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth), background 0.3s var(--ease-smooth);
   position: relative;
   overflow: hidden;
 }
@@ -259,14 +258,14 @@ p {
   width: 100%;
   height: var(--nav-height);
   z-index: 1000;
-  transition: all 0.4s var(--ease-smooth);
+  transition: background 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth), height 0.3s var(--ease-smooth), border-color 0.3s var(--ease-smooth);
   background: transparent;
 }
 
 .navbar.scrolled {
-  background: rgba(249, 247, 242, 0.88);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  background: rgba(249, 247, 242, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   box-shadow: var(--shadow-sm);
   border-bottom: 1px solid var(--border-light);
   height: 70px;
@@ -348,7 +347,7 @@ p {
   font-weight: 600;
   color: var(--text-dark);
   border-radius: 8px;
-  transition: all 0.3s var(--ease-smooth);
+  transition: color 0.2s var(--ease-smooth), background 0.2s var(--ease-smooth);
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -403,7 +402,7 @@ p {
   height: 2.5px;
   background: var(--midnight);
   border-radius: 2px;
-  transition: all 0.3s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth), opacity 0.3s var(--ease-smooth);
 }
 
 .nav-toggle.open span:nth-child(1) {
@@ -608,8 +607,9 @@ p {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  transition: all 0.4s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth);
   border: 1px solid var(--border-light);
+  will-change: transform;
 }
 
 .card:hover {
@@ -625,7 +625,8 @@ p {
   border-radius: 20px;
   padding: 32px;
   box-shadow: var(--shadow-sm);
-  transition: all 0.4s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth), border-color 0.3s var(--ease-smooth);
+  will-change: transform;
 }
 
 .glass-card:hover {
@@ -713,9 +714,10 @@ p {
   text-align: center;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-light);
-  transition: all 0.4s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth);
   position: relative;
   overflow: hidden;
+  will-change: transform;
 }
 
 .ministry-card::before {
@@ -728,7 +730,7 @@ p {
   background: linear-gradient(90deg, var(--gold), var(--gold-light));
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.4s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth);
 }
 
 .ministry-card:hover::before {
@@ -750,7 +752,7 @@ p {
   justify-content: center;
   margin: 0 auto 24px;
   font-size: 2rem;
-  transition: all 0.4s var(--ease-smooth);
+  transition: background 0.3s var(--ease-smooth), transform 0.3s var(--ease-smooth);
 }
 
 .ministry-card:hover .ministry-icon {
@@ -904,7 +906,8 @@ p {
   border-radius: 24px;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-light);
-  transition: all 0.4s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth);
+  will-change: transform;
 }
 
 .leader-card:hover {
@@ -959,7 +962,7 @@ p {
   background: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: all 0.3s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth), color 0.2s var(--ease-smooth), border-color 0.2s var(--ease-smooth);
 }
 
 .state-tab:hover,
@@ -984,7 +987,8 @@ p {
   border: 1px solid var(--border-light);
   border-radius: 16px;
   box-shadow: var(--shadow-sm);
-  transition: all 0.3s var(--ease-smooth);
+  transition: transform 0.25s var(--ease-smooth), box-shadow 0.25s var(--ease-smooth);
+  will-change: transform;
 }
 
 .pastor-card:hover {
@@ -1046,7 +1050,7 @@ p {
   border-radius: 12px;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  transition: border-color 0.3s var(--ease-smooth);
+  transition: border-color 0.2s var(--ease-smooth);
   background: var(--ivory);
 }
 
@@ -1078,7 +1082,8 @@ p {
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-light);
   text-align: center;
-  transition: all 0.4s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth), border-color 0.3s var(--ease-smooth);
+  will-change: transform;
 }
 
 .donate-card:hover {
@@ -1194,7 +1199,7 @@ p {
   fill: var(--navy);
   stroke: rgba(184, 147, 75, 0.3);
   stroke-width: 0.5;
-  transition: fill 0.3s var(--ease-smooth);
+  transition: fill 0.2s var(--ease-smooth);
 }
 
 .map-container svg path.active-state {
@@ -1384,8 +1389,8 @@ p {
 /* Scroll Reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s var(--ease-smooth);
+  transform: translateY(30px);
+  transition: opacity 0.6s var(--ease-smooth), transform 0.6s var(--ease-smooth);
 }
 
 .reveal.visible {
@@ -1395,8 +1400,8 @@ p {
 
 .reveal-left {
   opacity: 0;
-  transform: translateX(-40px);
-  transition: all 0.8s var(--ease-smooth);
+  transform: translateX(-30px);
+  transition: opacity 0.6s var(--ease-smooth), transform 0.6s var(--ease-smooth);
 }
 
 .reveal-left.visible {
@@ -1406,8 +1411,8 @@ p {
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(40px);
-  transition: all 0.8s var(--ease-smooth);
+  transform: translateX(30px);
+  transition: opacity 0.6s var(--ease-smooth), transform 0.6s var(--ease-smooth);
 }
 
 .reveal-right.visible {
@@ -1419,7 +1424,7 @@ p {
 .stagger-children>* {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.5s var(--ease-smooth);
+  transition: opacity 0.4s var(--ease-smooth), transform 0.4s var(--ease-smooth);
 }
 
 .stagger-children.visible>*:nth-child(1) {
@@ -1493,7 +1498,7 @@ p {
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   box-shadow: var(--shadow-sm);
-  transition: all 0.3s var(--ease-smooth);
+  transition: box-shadow 0.25s var(--ease-smooth);
 }
 
 .state-panel:hover {
@@ -1508,7 +1513,7 @@ p {
   background: linear-gradient(135deg, var(--midnight), var(--navy));
   color: var(--white);
   cursor: pointer;
-  transition: all 0.3s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth);
   user-select: none;
 }
 
@@ -1538,7 +1543,7 @@ p {
 .state-panel-header .chevron {
   font-size: 1.4rem;
   color: var(--gold-light);
-  transition: transform 0.3s var(--ease-smooth);
+  transition: transform 0.25s var(--ease-smooth);
 }
 
 .state-panel.open .chevron {
@@ -1599,7 +1604,7 @@ p {
   padding: 14px 18px;
   background: var(--ivory);
   border-radius: 12px;
-  transition: all 0.3s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth), border-color 0.2s var(--ease-smooth), transform 0.2s var(--ease-smooth);
   border: 1px solid transparent;
 }
 
@@ -1734,7 +1739,7 @@ p {
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-light);
   overflow: hidden;
-  transition: all 0.4s var(--ease-smooth);
+  transition: box-shadow 0.25s var(--ease-smooth);
 }
 
 .song-card:hover {
@@ -1747,7 +1752,7 @@ p {
   gap: 16px;
   padding: 20px 28px;
   cursor: pointer;
-  transition: all 0.3s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth);
   user-select: none;
 }
 
@@ -1792,7 +1797,7 @@ p {
 .song-toggle-icon {
   font-size: 0.9rem;
   color: var(--gold);
-  transition: transform 0.3s var(--ease-smooth);
+  transition: transform 0.25s var(--ease-smooth);
   flex-shrink: 0;
 }
 
@@ -1855,7 +1860,7 @@ p {
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-light);
   overflow: hidden;
-  transition: all 0.4s var(--ease-smooth);
+  transition: box-shadow 0.25s var(--ease-smooth);
 }
 
 .gallery-cat-card:hover {
@@ -1868,7 +1873,7 @@ p {
   gap: 16px;
   padding: 22px 28px;
   cursor: pointer;
-  transition: all 0.3s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth);
   user-select: none;
 }
 
@@ -1924,7 +1929,7 @@ p {
 .gallery-chevron {
   font-size: 0.9rem;
   color: var(--gold);
-  transition: transform 0.3s var(--ease-smooth);
+  transition: transform 0.25s var(--ease-smooth);
 }
 
 .gallery-cat-card.open .gallery-chevron {
@@ -1957,7 +1962,7 @@ p {
   background: var(--ivory);
   border: 1px solid rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: all 0.3s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth), color 0.2s var(--ease-smooth), border-color 0.2s var(--ease-smooth);
   font-family: inherit;
 }
 
@@ -1988,7 +1993,7 @@ p {
   overflow: hidden;
   aspect-ratio: 1;
   cursor: pointer;
-  transition: all 0.3s var(--ease-smooth);
+  transition: transform 0.25s var(--ease-smooth), box-shadow 0.25s var(--ease-smooth);
   box-shadow: var(--shadow-sm);
 }
 
@@ -2105,7 +2110,7 @@ p {
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid transparent;
-  transition: all 0.3s var(--ease-smooth);
+  transition: transform 0.25s var(--ease-smooth), box-shadow 0.25s var(--ease-smooth), border-color 0.25s var(--ease-smooth);
   box-shadow: var(--shadow-sm);
 }
 
@@ -2127,7 +2132,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s var(--ease-smooth);
+  transition: transform 0.3s var(--ease-smooth);
 }
 
 .pastor-photo-wrap:hover .pastor-church-photo {
@@ -2216,8 +2221,8 @@ p {
     width: 280px;
     height: 100vh;
     background: rgba(249, 247, 242, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     flex-direction: column;
     justify-content: center;
     gap: 4px;
@@ -2457,7 +2462,7 @@ p {
   font-weight: 600;
   color: var(--text-dark);
   cursor: pointer;
-  transition: all 0.35s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth), border-color 0.2s var(--ease-smooth), transform 0.2s var(--ease-smooth);
 }
 
 .gallery-filter-btn:hover {
@@ -2512,7 +2517,7 @@ p {
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  transition: all 0.3s var(--ease-smooth);
+  transition: transform 0.25s var(--ease-smooth), box-shadow 0.25s var(--ease-smooth);
   background: var(--navy);
 }
 
@@ -2555,7 +2560,7 @@ p {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.4s var(--ease-smooth);
+  transition: opacity 0.3s var(--ease-smooth), visibility 0.3s var(--ease-smooth);
 }
 
 .gallery-lightbox.active {
@@ -2598,7 +2603,7 @@ p {
   color: var(--midnight);
   font-size: 2.5rem;
   cursor: pointer;
-  transition: all 0.3s var(--ease-smooth);
+  transition: color 0.2s var(--ease-smooth), transform 0.2s var(--ease-smooth);
   z-index: 10000;
   line-height: 1;
   padding: 8px;
@@ -2624,7 +2629,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth), border-color 0.2s var(--ease-smooth), color 0.2s var(--ease-smooth);
   z-index: 10000;
 }
 
@@ -2659,7 +2664,7 @@ p {
   align-items: center;
   gap: 6px;
   color: var(--text-muted);
-  transition: all 0.3s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth), border-color 0.2s var(--ease-smooth), color 0.2s var(--ease-smooth), transform 0.2s var(--ease-smooth);
   font-size: 0.78rem;
   font-weight: 500;
   white-space: nowrap;
@@ -2762,7 +2767,7 @@ p {
   font-weight: 600;
   color: var(--text-dark);
   cursor: pointer;
-  transition: all 0.35s var(--ease-smooth);
+  transition: background 0.2s var(--ease-smooth), border-color 0.2s var(--ease-smooth), transform 0.2s var(--ease-smooth);
   letter-spacing: 0.3px;
 }
 

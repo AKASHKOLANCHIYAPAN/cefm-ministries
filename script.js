@@ -23,19 +23,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ─── Navbar Scroll Effect ───
+  // ─── Navbar Scroll Effect (throttled with rAF) ───
   const navbar = document.getElementById('navbar');
-  let lastScroll = 0;
+  let ticking = false;
 
   window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll > 60) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        if (window.pageYOffset > 60) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+        ticking = false;
+      });
+      ticking = true;
     }
-    lastScroll = currentScroll;
-  });
+  }, { passive: true });
 
   // ─── Scroll Reveal (IntersectionObserver) ───
   const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stagger-children');
