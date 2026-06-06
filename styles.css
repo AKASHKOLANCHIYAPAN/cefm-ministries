@@ -8,7 +8,9 @@
 /* --- Custom Properties --- */
 :root {
   /* Primary Palette */
-  --midnight: #1C2A39; /* Imperial Midnight */
+  --midnight: #1C2A39;
+  --card-bg: rgba(255, 255, 255, 0.7); /* Translucent glass card background */
+  --glass-blur: blur(20px); /* Imperial Midnight */
   --navy: #1C2A39; /* Imperial Midnight */
   --deep-blue: #2E3A4B; /* Slate / Navy */
   --royal-blue: #4A5D6E; /* Muted Slate */
@@ -262,7 +264,7 @@ p {
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: var(--shadow-sm);
@@ -693,12 +695,14 @@ p {
 }
 
 .ministry-card {
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border-radius: 20px;
   padding: 40px 32px;
   text-align: center;
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-light);
   transition: all 0.4s var(--ease-smooth);
   position: relative;
   overflow: hidden;
@@ -827,7 +831,9 @@ p {
 .devotional-card {
   max-width: 700px;
   margin: 0 auto;
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border-radius: 24px;
   padding: 48px;
   text-align: center;
@@ -882,10 +888,12 @@ p {
 .leader-card {
   text-align: center;
   padding: 48px 32px;
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border-radius: 24px;
   box-shadow: var(--shadow-md);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-light);
   transition: all 0.4s var(--ease-smooth);
 }
 
@@ -995,7 +1003,10 @@ p {
 .prayer-form {
   max-width: 640px;
   margin: 0 auto;
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
   border-radius: 24px;
   padding: 48px;
   box-shadow: var(--shadow-md);
@@ -1693,11 +1704,13 @@ p {
 }
 
 .song-card {
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border-radius: 20px;
   margin-bottom: 16px;
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-light);
   overflow: hidden;
   transition: all 0.4s var(--ease-smooth);
 }
@@ -1812,11 +1825,13 @@ p {
 }
 
 .gallery-cat-card {
-  background: var(--white);
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border-radius: 20px;
   margin-bottom: 16px;
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-light);
   overflow: hidden;
   transition: all 0.4s var(--ease-smooth);
 }
