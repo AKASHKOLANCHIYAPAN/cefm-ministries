@@ -1,38 +1,38 @@
 /* ============================================
    CEFM MINISTRIES — Design System
-   Sacred Teal & Antiqued Brass Theme
+   Obsidian Black, Crisp White & Sapphire Blue Theme
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* --- Custom Properties --- */
 :root {
-  /* Primary Palette — Sacred Teal & Antiqued Brass */
-  --midnight: #0C2D36; /* Deep Sacred Teal */
-  --card-bg: rgba(255, 255, 255, 0.78); /* Translucent glass card background */
+  /* Primary Palette — Obsidian Black, Crisp White & Sapphire Blue */
+  --midnight: #0B0F19; /* Rich Obsidian Black */
+  --card-bg: rgba(255, 255, 255, 0.82); /* Translucent glass card background */
   --glass-blur: blur(12px);
-  --navy: #0A2530; /* Abyssal Teal */
-  --deep-blue: #143D48; /* Cathedral Teal */
-  --royal-blue: #2A6B72; /* Muted Verdigris */
-  --gold: #B8934B; /* Antiqued Brass */
-  --gold-light: #D9C9A0; /* Warm Wheat Parchment */
-  --gold-dark: #8E6F2A; /* Aged Bronze */
-  --gold-deep: #8E6F2A; /* Aged Bronze Deep */
-  --ivory: #F9F7F2; /* Warm Ivory Parchment */
-  --ivory-warm: #F0ECE3; /* Sand Stone Warm */
+  --navy: #06080F; /* Midnight Abyss */
+  --deep-blue: #0F172A; /* Rich Slate Navy */
+  --royal-blue: #2563EB; /* Electric Cobalt Blue */
+  --gold: #1E40AF; /* Rich Royal Blue Accent */
+  --gold-light: #3B82F6; /* Sky Blue */
+  --gold-dark: #1D4ED8; /* Rich Royal Blue Dark */
+  --gold-deep: #1E3A8A; /* Deep Sapphire Navy */
+  --ivory: #FAFCFF; /* Crisp Ice White */
+  --ivory-warm: #F1F5F9; /* Pearl Slate */
   --white: #ffffff;
   --cream: #FFFFFF;
 
   /* Accent & Utility */
-  --text-dark: #152428; /* Deep Teal Charcoal */
-  --text-muted: #4E5F63; /* Muted Teal Slate */
-  --text-light: #8DA0A5; /* Soft Sea Mist */
-  --border-light: #E2DDD2; /* Soft Sand Border */
-  --border-gold: rgba(184, 147, 75, 0.25); /* Muted Brass Border */
-  --shadow-sm: 0 2px 8px rgba(12, 45, 54, 0.06);
-  --shadow-md: 0 4px 20px rgba(12, 45, 54, 0.10);
-  --shadow-lg: 0 8px 40px rgba(12, 45, 54, 0.14);
-  --shadow-gold: 0 4px 20px rgba(184, 147, 75, 0.18);
+  --text-dark: #0F172A; /* Obsidian Charcoal */
+  --text-muted: #475569; /* Cool Slate */
+  --text-light: #64748B; /* Muted Slate */
+  --border-light: #E2E8F0; /* Soft Slate Border */
+  --border-gold: rgba(37, 99, 235, 0.2); /* Muted Sapphire Border */
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 20px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 8px 40px rgba(15, 23, 42, 0.12);
+  --shadow-gold: 0 4px 20px rgba(37, 99, 235, 0.15);
 
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;

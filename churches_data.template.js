@@ -49,7 +49,7 @@ function renderChurches() {
 
             pastors.forEach(pastor => {
                 html += `
-            <div class="church-list-item classic-card" style="background: #fff; border: 1px solid rgba(212,175,55,0.3); border-radius: 8px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border-top: 4px solid var(--gold-light); transition: transform 0.3s ease;">
+            <div class="church-list-item classic-card" style="background: #fff; border: 1px solid var(--border-gold); border-radius: 8px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border-top: 4px solid var(--gold-light); transition: transform 0.3s ease;">
               <h5 class="church-name-text" style="color: var(--midnight-blue); font-size: 1.15rem; margin-bottom: 12px; font-weight: 700;">⛪ ${pastor.churchName || 'CEFM Church'}</h5>
               <div class="pastor-details-wrapper" style="display: flex; flex-direction: column; gap: 8px;">
                 <span class="pastor-name-text" style="color: #333; font-weight: 600; font-size: 0.95rem;">Pastor: Pr. ${formatName(pastor.name)}</span>

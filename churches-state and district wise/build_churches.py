@@ -149,7 +149,7 @@ html = f'''<!DOCTYPE html>
         }}
         .state-tab {{
             background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(212,175,55,0.25);
+            border: 1px solid rgba(37,99,235,0.25);
             color: rgba(255,255,255,0.75);
             border-radius: 50px;
             padding: 10px 22px;
@@ -161,10 +161,10 @@ html = f'''<!DOCTYPE html>
         }}
         .state-tab:hover, .state-tab.active {{
             background: linear-gradient(135deg, var(--gold-light), var(--gold-deep));
-            color: var(--midnight);
+            color: var(--white);
             border-color: transparent;
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(212,175,55,0.3);
+            box-shadow: 0 8px 24px rgba(37,99,235,0.3);
         }}
         .tab-count {{
             opacity: 0.7;
@@ -240,7 +240,7 @@ html = f'''<!DOCTYPE html>
         }}
         .stat-chip {{
             background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(212,175,55,0.2);
+            border: 1px solid rgba(37,99,235,0.2);
             border-radius: 12px;
             padding: 16px;
             text-align: center;
