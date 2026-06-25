@@ -218,13 +218,13 @@ p {
 
 .btn-gold {
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-  color: var(--midnight);
+  color: var(--white);
   box-shadow: var(--shadow-gold);
 }
 
 .btn-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(184, 147, 75, 0.4);
+  box-shadow: 0 6px 30px rgba(37, 99, 235, 0.4);
 }
 
 .btn-outline {
@@ -235,7 +235,7 @@ p {
 
 .btn-outline:hover {
   background: var(--gold);
-  color: var(--midnight);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
@@ -2466,14 +2466,14 @@ p {
 }
 
 .gallery-filter-btn:hover {
-  background: rgba(184, 147, 75, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
 
 .gallery-filter-btn.active {
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-  color: var(--midnight);
+  color: var(--white);
   border-color: var(--gold);
   box-shadow: var(--shadow-gold);
 }
@@ -2772,14 +2772,14 @@ p {
 }
 
 .gallery-filter-btn:hover {
-  background: rgba(184, 147, 75, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   border-color: var(--gold);
   transform: translateY(-2px);
 }
 
 .gallery-filter-btn.active {
   background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-  color: var(--midnight);
+  color: var(--white);
   border-color: var(--gold);
   box-shadow: var(--shadow-gold);
 }
